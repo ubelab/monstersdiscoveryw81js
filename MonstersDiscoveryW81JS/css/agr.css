@@ -1,0 +1,719 @@
+﻿
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'JOAN';
+    src: url('../font/joan.eot');
+    src: url('../font/joan.eot?#iefix') format('embedded-opentype'),
+         url('../font/joan.woff') format('woff'),
+         url('../font/joan.ttf') format('truetype'),
+         url('../font/joan.svg#JOAN') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EDO';
+    src: url('../font/edo-webfont.eot');
+    src: url('../font/edo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/edo-webfont.woff') format('woff'),
+         url('../font/edo-webfont.ttf') format('truetype'),
+         url('../font/edo-webfont.svg#EDO') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KOMIKAX';
+    src: url('../font/KOMIKAX_-webfont.eot');
+    src: url('../font/KOMIKAX_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/KOMIKAX_-webfont.woff') format('woff'),
+         url('../font/KOMIKAX_-webfont.ttf') format('truetype'),
+         url('../font/KOMIKAX_-webfont.svg#KOMIKAX') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+canvas {
+    touch-action: manipulation;
+}
+
+.h100,body,html{
+	height:100%;
+	width:100%;
+}
+body,html {
+	margin:0;
+	width:100%;
+	overflow:hidden;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 550px) {
+	body,html {
+		font-size:16px;
+	}
+}
+
+@media screen and (min-width: 551px) {
+	body,html {
+		font-size:18px;
+	}
+}
+
+body,
+body a,
+.ui-body-s {
+	font-family:'KOMIKAX', Arial, sans-serif;
+}
+.overflowHidden {
+	overflow:hidden;
+}
+.hidden{
+	display:none;
+}
+.listReset,
+.listReset li {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.posAbs{
+	position:absolute;
+	top:0;
+	left:0;
+}
+a {
+	text-decoration: none;
+	outline:none;	
+}
+h2 {
+	font-size:1.1em;
+}
+h4 {
+	font-size:1em;
+	color:#6BC5EB;
+	margin:0;
+	text-align:center;
+}
+/* =================================================================*/
+/* ========= DA QUI LE CLASSI SONO SUDDIVISE PER SEZIONI ===========*/
+/* =================================================================*/
+
+/* ========================================*/
+/* ================= HOME =================*/
+/* ========================================*/
+
+.bg1{
+	-webkit-animation: appearDisappear 5000ms infinite alternate ease-in-out;		
+}
+.bg {
+	width:100%;
+    height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+/*
+	height:100%;
+    width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1;
+	background:url(./../images/home1.png) no-repeat fixed center center / cover;
+*/
+background: url(./../images/home1.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+z-index:1;
+}
+
+.bg1 {
+	z-index:2;
+	/*background:url(./../images/home_face.png) no-repeat fixed center center / cover;*/
+background: url(./../images/home_face.png) no-repeat center center fixed; 
+}
+
+@-webkit-keyframes appearDisappear {
+	0% {opacity:  100; } 
+	100% {opacity: 0;}
+}
+
+body,html {
+    -ms-touch-action: none; /* Disable touch behaviors, like pan and zoom */
+}
+
+canvas {
+    -ms-touch-action: none; /* Disable touch behaviors, like pan and zoom */
+}
+
+#drawListener {
+    -ms-touch-action: none; /* Disable touch behaviors, like pan and zoom */
+}
+
+.homeButunera {
+	position:absolute;
+	z-index:10;
+	bottom:0;
+	left:0;
+	height:48%;
+	width:34%;
+}
+.homeButunera a {
+	display:block;
+}
+.homeButunera img {
+	height:100%;
+	width:100%;
+}
+.homeButunera .home_btn1{
+	height:25%;
+	margin:7% 0 0 0%;
+}
+.homeButunera .home_btn2{
+	height:15%;
+	margin:5% 0 0 3%;
+}
+.homeButunera .home_btn3{
+	height:21%;
+	margin:2% 0 0 9%;
+}
+.homeButunera .home_btn4{
+	height:24%;
+	margin:3% 0 0 8%;
+}
+.home_logoInvenktion img{
+	width:22%;
+	position:absolute;
+	z-index:11;
+	right:0;
+	bottom: -1px;
+}
+.home_creditsBtn img,
+.home_audioBtn img,
+.canvas_audioBtn{
+	bottom: 1%;
+    left: 7%;
+    position: absolute;
+    width: 6%;
+    z-index:10;
+}
+.homeCreditsCloseBtn {
+	right:0;
+	top:0;
+	position:absolute;
+	width:10%;
+	z-index:100;
+}
+.home_audioBtn img,
+.canvas_audioBtn {
+	left:1%;
+}
+.preloadBg {
+	width:1px;
+	height:1px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:100;
+	background-image: url(./../images/sfondostellare.png), url(./../images/fondo.png),url(./../images/sfondi/sfondo1.png), url(./../images/sfondi/sfondo2.png),url(./../images/sfondi/sfondo3.png),url(./../images/sfondi/sfondo4.png),url(./../images/sfondi/sfondo5.png),url(./../images/sfondi/sfondobonus.png);
+	background-repeat: no-repeat;
+}
+.tutorialSkip {
+	font-size:0.5em;
+	text-align:center;
+	margin: 0!important;
+	padding: 3px!important;
+	position: absolute;
+	width: 100%;
+	top: -30px;
+	z-index:50;
+}
+
+/* ========================================*/
+/* ================ SEZIONI ===============*/
+/* ========================================*/
+
+.sezioni_bg {
+	background:url(./../images/sfondostellare.png) no-repeat fixed center center / cover;
+}
+
+/* ========================================*/
+/* ================ LIVELLI ===============*/
+/* ========================================*/
+
+.lockedLevel {
+	-webkit-filter: grayscale(100%);  /* safari/chrome */
+    -moz-filter: grayscale(100%); /* firefox */
+    -ms-filter: grayscale(100%);  /* IE >= 9 */
+    -o-filter: grayscale(100%); /* Opera, if support CSS3 */
+    filter: gray; filter: grayscale(100%); /* edge browsers */ 
+}
+
+.livelli_bg {
+	background:url(./../images/fondo.png) no-repeat fixed center center / cover;
+}
+.monsterTitle {
+	font-size: 1.3em;
+    margin: 0;
+}
+.galleryContainer {
+	width:999999999px;
+	position:relative;
+	top:17%;
+	left:0;
+	z-index:100;
+}
+.galleryContainer li {
+	float:left;
+	height:55%;
+	text-align: center;
+}
+.galleryContainer li img{
+	width:75%;
+	height:75%;
+}
+.galleryContainer li h1 {
+	color:#fff;
+	text-align:center;
+	width:100%;
+}
+.paginatorShowGallery {
+	width:20%;
+	left:40%;
+	text-align:center;
+	position:absolute;
+	z-index:101;
+	bottom:2%;
+}
+
+.paginatorShowGallery img {
+	width:30%;
+	position:absolute;
+	left:0;
+	bottom:-15%;
+}
+.paginatorShowGallery .prev img {
+	left:0;
+}
+.paginatorShowGallery .next img {
+	left:auto;
+	right:0;
+}
+.paginatorShowGallery {
+	font: 25px/45px 'KOMIKAX', Arial, sans-serif;
+	color:#fff;
+}
+.presentationLevel {
+	text-align:center;
+}
+.presentationLevel img {
+	height:100%;
+}
+/* ========================================*/
+/* ================= CANVAS ===============*/
+/* ========================================*/
+.gamePause_3 {
+	background:#C40000;
+	border:1px solid #C40000!important;
+}
+.trickTrap {
+	position: fixed;
+	display: block;
+	padding: 10px;
+	z-index: 50000;
+}
+
+.brushSizerContainer img {
+	position:absolute;
+	right:0;
+	bottom:13%;
+	width:10%;
+	z-index:100;
+	padding:10px;
+}
+.brushSizerContainer .sizer_add,
+.brushSizerContainer .sizer_less {
+	width:4%;
+	z-index:1005;
+	bottom: 22%;
+}
+.brushSizerContainer .sizer_less {
+	bottom:12%;
+	right:7%
+}
+.brushSize{
+	bottom: 13.5%;
+	color: #FFFFFF;
+	font-size: 1.1em;
+	position: absolute;
+	right: 3%;
+	text-align: center;
+	z-index: 101;
+	width: 7%;
+}
+#canvas .backBTN {
+	left:10px;
+}
+.canvas_audioBtn {
+	margin:0;
+	width: 11%;
+}
+.canvas_rubber img{
+	position:absolute;
+	right:0;
+	bottom:0;
+	width:10%;
+	z-index: 1000;
+}
+.canvas_timer,
+.canvas_check {
+	position:fixed;
+	right:5px;
+	top:5px;
+	font-size:2em;
+	color:#fff;
+	z-index:1000;
+	padding: 0 10px;
+}
+.canvas_check {
+	width:10%;
+	right:0px;
+}
+/*DEFAULT*/
+.colorsContainer img{
+	position:absolute;
+	height: 11%;
+	z-index: 1002;
+	border-radius:20px;
+}
+.colorsContainer img.colours1{
+	left: 4%;
+    top: 19%;
+	background:red;
+	
+}
+.colorsContainer img.colours2{
+	left: 4%;
+    top: 29%;
+	background:green;
+}
+.colorsContainer img.colours3{	
+	left: 4%;
+    top: 42%;
+	background:orange;
+}
+.colorsContainer img.colours4{
+	left: 3%;
+    top: 52%;
+	background:pink;
+}
+.colorsContainer img.colours5{
+	left: 1%;
+    top: 62%;
+    background:yellow;
+}
+/* 4 COLORI */
+.maxColor4 img{
+	height: 12%;
+}
+.maxColor4 img.colours1{
+	left: 3%;
+    top: 19%;
+}
+.maxColor4 img.colours2{
+	left: 4%;
+    top: 31%;
+}
+.maxColor4 img.colours3{	
+	left: 3.5%;
+    top: 46%;
+}
+.maxColor4 img.colours4{
+	left: 1%;
+    top: 57.5%;
+}
+
+/* 3 COLORI */
+.maxColor3 img{
+	height: 13%;
+}
+.maxColor3 img.colours1{
+	left: 3%;
+    top: 20%;
+}
+.maxColor3 img.colours2{
+	left: 3%;
+    top: 35%;
+}
+.maxColor3 img.colours3{	
+	left: 1.5%;
+    top: 53%;
+}
+
+/* 2 COLORI */
+.maxColor2 img{
+	height: 13%;
+}
+.maxColor2 img.colours1{
+	left: 3%;
+    top: 26%;
+}
+.maxColor2 img.colours2{
+	left: 2%;
+    top: 43%;
+}
+
+/* 1 COLORI */
+.maxColor1 img{
+	height: 14%;
+}
+.maxColor1 img.colours1{
+	left: 2%;
+    top: 30%;
+}
+
+.mainContainer,
+.bgContainer {
+	width:100%;
+	height:100%;
+}
+.bgContainer {
+	position:fixed!important;
+}
+.mainContainer {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+.mubcanvas {
+	position: fixed;
+	z-index: 15;
+	overflow: hidden;
+	top: 0px;
+	left:0px;
+	border: 0pt solid #0f0;
+}
+.imgContainer {
+	position:relative;
+	margin:0 auto;
+	text-align:center;
+	z-index:100;
+}
+.imgContainer img,
+.bgContainer{
+	height:100%;
+	top:0;
+	left:0;
+	position:absolute;
+}
+.imgBG {
+	opacity:0.30;
+}
+.imgTR {
+	z-index:100;
+}
+
+.palette {
+	height:85%;
+	position:absolute;
+	z-index:100;
+	top:10%;
+	left:-12%;
+}
+.gamePausedContainer li a {
+	display: inline-block;
+    font-size: 0.7em;
+    line-height: 23px;
+    padding: 7px;
+    width: 100px;
+}
+
+.showPaintBtn {
+	position: absolute;
+    right: 13px;
+    top: 28%;
+    width: 8%;
+    z-index: 100005;
+}
+.canvasImgHelp {
+	height:100%;
+}
+
+.resultsStars img{
+	width:75%!important
+}
+.resultsStars {
+	text-align:center;
+}
+.showPainting {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:100000;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.5);
+}
+.showHELP {
+	display:block;
+}
+
+/* TUTORIAL */
+.tutorialSlider {
+	width:100000px;
+	position:relative;
+	top:0;
+	left:0;
+	height:100%;
+}
+.tutorialSlider img,
+.tutorialSlider li {
+	height:100%;
+	
+}
+.resultContainer {
+	text-align:center;
+}
+.resultContainer h4 {
+	font-size:0.6em;
+}
+.imgBonusUnlocked,
+.imgSectionUnlocked {
+	width:50%;	
+}
+.tutorialSlider li {
+	width:100%;
+	float:left;
+	text-align:center;
+}
+/************/
+/* ================================================*/
+/* ============== UI E DIALOG e VARIE =============*/
+/* ================================================*/
+.jhonny,
+.backBTN{
+	position:absolute;
+	bottom:10px;
+	left:10px;
+	width:20%;
+	z-index:200000;
+}
+.backBTN {
+	left:auto;
+	right:1%;
+	width:7%;
+}
+.MS_popUpContainer {
+	background-color:rgba(0,0,0,0.5);
+	width:100%;
+	height:100%;
+	position:fixed;
+	z-index:99999999;
+}
+.MS_popUpInn {
+	display:none;
+	z-index: 99999;
+}
+.MS_popUp {
+	width:1%;
+	height:1%;
+	background:#000;
+	position:absolute;
+	top:0;
+	left:50%;
+	display:block!important;
+	box-shadow:0 0 10px #000;
+}
+.MS_popUpInn {
+	height: 100%;
+    padding: 0;
+	position:relative;
+}
+.MS_popUpClose {
+	right:0;
+	top:0;
+	position:absolute;
+	height:15%;
+	z-index:1000;
+}
+.MS_popUp h1,
+.MS_popUp ul,
+.MS_popUp li,
+.MS_popUp h2{
+	font-size:1.4em;
+	color:#fff;
+	text-align:center;
+}
+.MS_popUp h1,
+.MS_popUp h2 {
+	padding-top:10px;
+	margin:0;
+}
+.MS_popUp h4 {
+	margin:10px;
+}
+
+.MS_popUp li {
+	font-size:0.4em;
+	margin:5px 0;
+}
+.MS_popUp li span {
+	color:#6BC5EB;
+}
+.MS_popUp a {
+	padding:15px;
+	border:2px solid #6BC5EB;
+	border-radius: 10px 10px 10px 10px;
+    display: inline;
+    line-height: 75px;
+    color:#fff;
+    text-decoration:none;
+}
+.MS_popUp a:hover {
+	background:#6BC5EB;
+	border:2px solid #6BC5EB!important;
+}
+.showPopUpCont,
+.showPopUpInn {
+	display:block!important;
+}
+.setStars {
+	width: 20% !important;
+	display:inline!important;
+}
+.quitContainer li a {
+	padding: 9px;
+	border: 2px solid #6BC5EB;
+	border-radius: 10px 10px 10px 10px;
+	display: inline-block;
+	line-height: 53px;
+	color: #fff;
+	text-decoration: none;
+	width: 69px;
+}
+
+.quitContainer li a:hover {
+	border: 2px solid #6BC5EB!important;
+}
+#swipeview-slider span {
+	padding:5px 0;
+}
+
+/* pulizia dei float*/
+.XclearAll:after {
+	content: ".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+	_height: 1%;
+}
+*:first-child+html .XclearAll {
+	min-height:1px;
+}
+/* fine della pulizia*/

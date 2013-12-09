@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    
+    <title>WEB APP MONSTER DISCOVERY</title>
+
+    <!--NOTE:
+        Additional scripts and css files are to be placed here.
+        You can use jQuery namespace($) and all functionalities in jQuery
+        in your script.  For example:
+
+            <script src="main.js"></script>
+            <link rel="stylesheet" href="my.css">
+    -->
+
+    <!-- WinJS code -->
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.3.2.min.js"></script>
+    <!-- IMPORT UFFICIALE NELLA VERSIONE DEFINITIVA -->
+    <script type="text/javascript" src="js/app/application.js"></script>
+    <script type="text/javascript" src="js/app/DrawCanvasManager.js"></script>
+    <script type="text/javascript" src="js/app/StorageManager.js"></script>
+    <script type="text/javascript" src="js/app/SoundManager.js"></script>
+    <script type="text/javascript" src="js/app/LevelManager.js"></script>
+    <script type="text/javascript" src="js/app/PageShowManager.js"></script>
+    <script type="text/javascript" src="js/app/AtelierShowManager.js"></script>
+    <script type="text/javascript" src="js/app/HomeShowManager.js"></script>
+    <script type="text/javascript" src="js/app/SezioniShowManager.js"></script>
+    <script type="text/javascript" src="js/app/LivelliShowManager.js"></script>
+    <script type="text/javascript" src="js/app/CanvasShowManager.js"></script>
+    <script type="text/javascript" src="js/app/TimerManager.js"></script>
+    
+    <link href="js/jquery.mobile-1.3.2.min.css" rel="stylesheet" type="text/css">
+    <link href="css/swipeview.css" rel="stylesheet" type="text/css">
+    <link href="css/animations.css" rel="stylesheet" type="text/css">
+    <link href="css/agr.css" rel="stylesheet" type="text/css">
+    
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="js/libs/swipeview.js"></script>
+    
+</head>
+
+<body>
+    <!-- Start of home page: #home -->
+    <div data-role="page" id="home">
+
+	        <div class="mainContainer overflowHidden">
+	        	<div class="homeButunera">
+	            	<a class="home_btn1" href="#"><img src="images/btn_1.png"/></a>
+	                <a class="home_btn3" href="#"><img src="images/btn_3.png"/></a>
+	                <a class="home_btn4 JS_quit" href="#"><img src="images/btn_4.png"/></a>
+	            </div>
+	            <a class="home_logoInvenktion" href="#"><img src="images/home_logo_k.png"/></a>
+	            <div class="bg bg1"></div>
+	            <div class="bg"></div>
+	        
+	            <a href="#" class="home_creditsBtn" data-rel="popup"><img class="" src="images/credits.png"/></a>
+	            <a href="#" class="home_audioBtn"><img class="" src="images/soundon.png"/></a>
+	            <a href="#" class="home_audioBtn mute hidden"><img class="" src="images/soundoff.png"/></a>
+				<div class="preloadBg"></div>
+	        </div>
+        		
+        <!-- /content -->
+    </div><!-- /page home -->
+
+	<!-- Start of sezioni page: #sezioni -->
+    <div data-role="page" id="sezioni">
+    	<div class="mainContainer overflowHidden">
+	        <div id="wrapper"></div>
+	        <img class="jhonny" src="images/jhonnybrush_9.png" />
+	        <a href="#" >
+				<img class="backBTN jsBackHome" src="images/back.png"/>
+			</a>
+	        <div class="sezioni_bg bgContainer"></div>
+	    </div>
+    </div><!-- /page sezioni -->
+
+    <!-- Start of livelli page: #livelli -->
+    <div data-role="page" id="livelli">
+    	<div class="mainContainer overflowHidden">
+	        <div id="wrapper_livelli"></div>
+	        <img class="jhonny" src="images/jhonnybrush_10.png" />
+	        <a href="#" >
+				<img class="backBTN jsBackSezioni" src="images/back.png"/>
+			</a>
+	        <div class="livelli_bg bgContainer"></div>
+       </div>
+    </div><!-- /page livelli -->
+    
+    <!-- Start of atelier page: #atelier -->
+    <div data-role="page" id="atelier">
+    	<div class="mainContainer overflowHidden">
+	        <div id="wrapper_atelier"></div>
+	        <img class="jhonny" src="images/jhonnybrush_10.png" />
+	        <a href="#" >
+				<img class="backBTN jsAtelierBackHome" src="images/back.png"/>
+			</a>
+	        <div class="livelli_bg bgContainer animatedButton"></div>
+       </div>
+    </div><!-- /page livelli -->
+    
+    <!-- Start of canvas page: #canvas -->
+    <div data-role="page" id="canvas" class="h100">
+    	
+	       <div class="mainContainer overflowHidden">
+	        	<div class="imgContainer h100">
+	        		<div id="canvascontainer" class="mubcanvas"></div>
+	            	<img class="imgTR" src="images/mostri/w1_monster1_tr.png"/>
+	                <img class="imgBG" src="images/mostri/w1_monster1.png"/>
+	            </div>
+	            <a href="#" class="canvas_rubber">
+                    <img class="gommaBtn animatedButton clickable" src="images/gomma_size_1.png" />
+	            </a>
+	            <div class="brushSizerContainer">
+                    <img class="sizer_add animatedButton clickable" src="images/brush-sizer_add.png" />
+                    <img class="sizer_less animatedButton clickable" src="images/brush-sizer_less.png" />
+	            	<!--<h1 class="brushSize">1</h1>-->
+	           		<img class="sizerBg" src="images/brush-sizer.png"/>
+	            </div>
+
+                <canvas id="drawListener" style="position:absolute; top: 0; z-index: 500;"></canvas>
+
+	            <span class="colorsContainer">
+                    <img class="tavcol colours1 animatedButton clickable" src="images/inkPalette1.png" />
+                    <img class="tavcol colours2 animatedButton clickable" src="images/inkPalette2.png" />
+                    <img class="tavcol colours3 animatedButton clickable" src="images/inkPalette3.png" />
+                    <img class="tavcol colours4 animatedButton clickable" src="images/inkPalette4.png" />
+                    <img class="tavcol colours5 animatedButton clickable" src="images/inkPalette5.png" />
+                </span>
+                <img class="palette" src="images/tavolozza.png"/>
+	            
+	            <a id="timer" class="canvas_timer hidden" href="#">45</a>
+	            <img class="canvas_check checkBtn hidden" src="images/check.png" />	            
+	            <a href="#" >
+					<img class="backBTN jsBackLivelli animatedButton" src="images/pause_btn.png"/>
+				</a>
+	            <div class="bgContainer canvas_bgContainer"></div>
+	        </div>
+	    <img class="showPaintBtn" src="images/showPaint.png"/>
+        <div align="center" class="showPainting hidden">
+        	<img class="canvasImgHelp" src=""/>
+        </div>
+    </div><!-- /page canvas -->
+    
+    <!-- Start of livelli page: #livelli -->
+    
+	<audio class="background" loop="true" preload="auto"><source src="audio/sound.mp3" type="audio/mp3" /></audio>
+    <audio class="plaf" preload="auto"><source src="audio/plaf.mp3" type="audio/mp3" /></audio>
+    <audio class="positive" preload="auto"><source src="audio/positive.mp3" type="audio/mp3" /></audio>
+    <audio class="negative" preload="auto"><source src="audio/negative.mp3" type="audio/mp3" /></audio>
+    
+    <!-- POPUP -->
+    <div class="MS_popUpContainer hidden">
+    	<div class="MS_popUp">
+    		<div class="MS_popUpInn ">
+    			<!-- Il contenuti è dinamico -->
+    		</div>
+    	</div>
+    </div>
+    
+    <!-- MSG POPUP -->
+    <div class="hidden">
+    	<!-- CREDITS -->
+    	<div id="MS_credits">
+    		<h1>Credits</h1>
+    		<div class="creditsContainer">
+    			<img class="homeCreditsCloseBtn JS_popUpClose" src="images/xClose.png"/>
+    			<ul class="listReset">
+    				<li>Marco Uberti <span>Software Engineering</span></li>
+    				<li>Andrea Grilli <span>Creative artist</span></li>
+    				<span class="musicCredits"><li>Alexander Falinsky <span>Soundtrack theme</span></li></span>
+    				<li><a class="credits_Invenktion" href="http://www.invenktion.com" target="_blank">www.invenktion.com</a></li>
+    			</ul>
+    		</div>
+    	</div>
+    	
+    	<!-- -QUIT -->
+    	<div id="MS_quit">
+    		<h2>Do you want <br>to Exit?</h2>
+    		<div class="quitContainer">
+    			<ul class="listReset">
+    				<li><a class="ui-btn-back" href="#si">yes</a> <a class="JS_popUpClose" href="#no">No</a></li>
+    			</ul>
+    		</div>
+    	</div>
+    	
+    	<!-- MENU PAUSE -->
+    	<div id="MS_gamePaused">
+    		<h1>Game Paused</h1>
+    		<div class="gamePausedContainer">
+    			<ul class="listReset">
+    				<li><a class="gamePause_1" href="#">Continue</a></li>
+    				<li><a class="gamePause_2" href="#">Restart</a></li>
+    				<li><a class="gamePause_3" href="#">Back</a></li>
+    			</ul>
+    			<img class="canvas_audioBtn home_audioBtn" src="images/soundon.png"/>
+	            <img class="canvas_audioBtn mute hidden home_audioBtn" src="images/soundoff.png"/>
+    		</div>
+    	</div>
+    	
+    	<!-- RESULT BAD -->
+    	<div id="MS_resultBad">
+    		<h1>Ohhhh noooo!</h1>
+    		<div class="resultContainer">
+    			<h4 class="badResults">You can do better!</h4>
+    			<ul class="listReset">
+    				<li><a class="gamePause_2" href="#">Retry</a> <a class="gamePause_3" href="#">Back</a></li>
+    			</ul>
+    		</div>
+    	</div>
+    	
+    	<!-- RESULT OK -->
+    	<div id="MS_resultOk">
+    		<div class="resultContainer">
+    			<h4 class="resultTitle">Fine</h4>
+    			<div class="resultsStars"></div>
+    			<ul class="listReset">
+    				<li><a class="gamePause_3" href="#">Back</a> <a class="gamePause_2" href="#">Retry</a> <a class="gamePause_next" href="#">Next</a></li>
+    			</ul>
+    		</div>
+    	</div>
+    	
+    	<!--  SEZIONE SBLOCCATA -->
+    	<div id="MS_sectionUnlock">
+    		<div class="resultContainer">
+    			<h4>Congratulation!<br>You have unlock a new world</h4>
+    			<img class="imgSectionUnlocked JS_popUpClose"/>
+    		</div>
+    	</div>
+    	
+    	<!--  Bonus Monster -->
+    	<div id="MS_bonusPaint">
+    		<div class="resultContainer">
+    			<h4>You have unlock a new bonus monster</h4>
+    			<img class="imgBonusUnlocked JS_popUpClose"/>
+    		</div>
+    	</div>
+    	
+    	<!-- TUTORIAL -->
+    	<div id="MS_tutorial">
+    		<h2 class="tutorialSkip">Skip</h2>
+    		<div class="tutorialCont overflowHidden h100 posRelative">
+    			<ul class="listReset tutorialSlider XclearAll">
+    				<li>
+    					<img class="JS_tutorial1" src="images/tutorial1.png"/>
+    				</li>
+    				<li>
+    					<img class="JS_tutorial2" src="images/tutorial2.png"/>
+    				</li>
+    				<li>
+    					<img class="JS_tutorial3" src="images/tutorial3.png"/>
+    				</li>
+    				<li>
+    					<img class="JS_tutorial4" src="images/tutorial4.png"/>
+    				</li>
+    				<li>
+    					<img class="JS_tutorial5" src="images/tutorial5.png"/>
+    				</li>
+    			</ul>
+    		</div>
+    	</div>
+    	
+    	<!--  Presentazione Livelli -->
+    	<div id="MS_presentation">
+    		<div align="center" class="h100 presentationLevel">
+    			<!-- Inserisco dinamicamente -->
+    		</div>
+    	</div>
+    </div>
+</body>
+</html>

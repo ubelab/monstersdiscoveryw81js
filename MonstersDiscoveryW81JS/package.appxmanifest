@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="8d023062-b7af-4439-8b25-a5e4a1771660" Version="1.0.0.27" Publisher="CN=utente" />
+  <Properties>
+    <DisplayName>MonstersDiscoveryW81JS</DisplayName>
+    <PublisherDisplayName>utente</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <m2:VisualElements DisplayName="MonstersDiscoveryW81JS" Description="MonstersDiscoveryW81JS" ForegroundText="light" BackgroundColor="#5086e1" Square150x150Logo="images\icon.png" Square30x30Logo="images\SmallLogo.png">
+        <m2:DefaultTile ShortName="Monsters Discovery">
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="images\splashscreen.png" BackgroundColor="#5086e1" />
+        <m2:InitialRotationPreference>
+          <m2:Rotation Preference="landscape" />
+        </m2:InitialRotationPreference>
+        <m2:ApplicationView MinWidth="width500" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
