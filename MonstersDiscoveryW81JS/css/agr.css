@@ -123,7 +123,7 @@ h4 {
 	z-index:1;
 	background:url(./../images/home1.png) no-repeat fixed center center / cover;
 */
-background: url(./../images/home1.png) no-repeat center center fixed; 
+/*background: url(./../images/home1.png) no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -133,8 +133,11 @@ z-index:1;
 
 .bg1 {
 	z-index:2;
-	/*background:url(./../images/home_face.png) no-repeat fixed center center / cover;*/
-background: url(./../images/home_face.png) no-repeat center center fixed; 
+    /*background: url(./../images/home_face.png) no-repeat center center fixed; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 @-webkit-keyframes appearDisappear {
@@ -238,7 +241,7 @@ canvas {
 /* ========================================*/
 
 .sezioni_bg {
-	background:url(./../images/sfondostellare.png) no-repeat fixed center center / cover;
+	/*background:url(./../images/sfondostellare.png) no-repeat fixed center center / cover;*/
 }
 
 /* ========================================*/
@@ -254,7 +257,7 @@ canvas {
 }
 
 .livelli_bg {
-	background:url(./../images/fondo.png) no-repeat fixed center center / cover;
+	/*background:url(./../images/fondo.png) no-repeat fixed center center / cover;*/
 }
 .monsterTitle {
 	font-size: 1.3em;

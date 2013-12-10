@@ -200,7 +200,9 @@
 			$(".imgTR").attr("src",level.contorno);
 			$(".canvasImgHelp").attr("src",level.immagine);
 			
-			$(".canvas_bgContainer").css("background","url("+section.sfondo+") no-repeat fixed center center / cover");
+			//$(".canvas_bgContainer").css("background", "url(" + section.sfondo + ") no-repeat fixed center center / cover");
+		    //marco uberti 10/12/2013
+			$(".canvas_bgContainer img").attr("src", "" + section.sfondo + "");
 			
 			//Popolo la tavolozza colori
 			var colori =level.colori;
