@@ -106,7 +106,7 @@ h4 {
 /* ========================================*/
 
 .bg1{
-	-webkit-animation: appearDisappear 5000ms infinite alternate ease-in-out;		
+	animation: appearDisappear 5s infinite alternate;		
 }
 .bg {
 	width:100%;
@@ -114,21 +114,7 @@ h4 {
 	position:absolute;
 	top:0;
 	left:0;
-/*
-	height:100%;
-    width:100%;
-	position:absolute;
-	top:0;
-	left:0;
-	z-index:1;
-	background:url(./../images/home1.png) no-repeat fixed center center / cover;
-*/
-/*background: url(./../images/home1.png) no-repeat center center fixed; */
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-z-index:1;
+    z-index:1;
 }
 
 .bg1 {
@@ -140,7 +126,7 @@ z-index:1;
     background-size: cover;
 }
 
-@-webkit-keyframes appearDisappear {
+@keyframes appearDisappear {
 	0% {opacity:  100; } 
 	100% {opacity: 0;}
 }
@@ -244,9 +230,17 @@ canvas {
 	/*background:url(./../images/sfondostellare.png) no-repeat fixed center center / cover;*/
 }
 
+.sectionImage {
+    margin: auto;
+}
+
 /* ========================================*/
 /* ================ LIVELLI ===============*/
 /* ========================================*/
+
+.levelImage {
+    margin: auto;
+}
 
 .lockedLevel {
 	-webkit-filter: grayscale(100%);  /* safari/chrome */
