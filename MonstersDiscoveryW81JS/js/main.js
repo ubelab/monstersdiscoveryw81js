@@ -40,7 +40,7 @@ var init = function () {
     //
 	//Faccio partire la musica
     INVENKTION.SoundManager.playBackgroundMusic();
-     
+
     console.log("init() called");
 };
 $(document).bind('pageinit', init);
