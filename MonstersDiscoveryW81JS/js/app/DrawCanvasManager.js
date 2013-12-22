@@ -84,8 +84,8 @@
 	{
 	    event.preventDefault();
 		paintPointer = true;
-		x = event.screenX;
-		y = event.screenY;
+		x = event.pageX;
+		y = event.pageY;
 		if (x || y) {
 		    prev_x = x;
 		    prev_y = y;
@@ -111,8 +111,8 @@
 	{
 	    event.preventDefault();
 		var current = event.currentPoint;
-		x = event.screenX;
-		y = event.screenY;
+		x = event.pageX;
+		y = event.pageY;
 		drawOnTouchMove(x, y);
 	}
 	function onMouseMove(event)
@@ -624,6 +624,11 @@
 				 
 			 aElContainer.append(trickEL);
 			 $("#canvas").append(aElContainer);
+
+             //dopo un secondo rimuovo l'elemento dal DOM
+			 window.setTimeout(function () {
+			     aElContainer.remove();
+			 }, 1000);
 		 },
 		 showTrick: function() {
 			 this.showTrickOrTrap("trick");	 

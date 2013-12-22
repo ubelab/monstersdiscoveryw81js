@@ -154,6 +154,7 @@
     <Content Include="images\home_face.png" />
     <Content Include="images\home_logo_k.png" />
     <Content Include="images\icon.scale-100.png" />
+    <Content Include="images\icona512.png" />
     <Content Include="images\increase.png" />
     <Content Include="images\inkPalette.psd" />
     <Content Include="images\inkPalette1.png" />

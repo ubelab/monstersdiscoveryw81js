@@ -41,6 +41,11 @@ var init = function () {
 	//Faccio partire la musica
     INVENKTION.SoundManager.playBackgroundMusic();
 
+    //Centro in verticale la maschera
+    var TOP = window.innerHeight / 2 - (350 / 2);
+    $(".mascheraImg img").css("position", "absolute");
+    $(".mascheraImg img").css("top", TOP);
+
     console.log("init() called");
 };
 $(document).bind('pageinit', init);

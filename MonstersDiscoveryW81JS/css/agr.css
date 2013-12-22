@@ -47,6 +47,15 @@
     display:none;
 }
 
+.mascheraImg {
+    width:350px;
+    margin:auto;
+}
+
+.mascheraImg img{
+    width:350px;
+}
+
 
 /*Marco Uberti - schermi alti e stretti (4/3 o quadrati), massimo schiacciamento*/
 @media (max-aspect-ratio: 3/3) {
@@ -157,16 +166,18 @@ h4 {
 	top:0;
 	left:0;
     z-index:1;
+    background: url(./../images/home1.png) no-repeat center center fixed;
+    /*background-size: cover;*/
+     background-size: auto 100%;
 }
 
 .bg1 {
 	z-index:2;
-    /*background: url(./../images/home_face.png) no-repeat center center fixed; */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url(./../images/home_face.png) no-repeat center center fixed;
+    /*background-size: cover;*/
+     background-size: auto 100%;
 }
+
 
 @keyframes appearDisappear {
 	0% {opacity:  100; } 
@@ -654,7 +665,7 @@ canvas {
 	width:7%;
 }
 .MS_popUpContainer {
-	background-color:rgba(0,0,0,0.5);
+	/*background-color:rgba(0,0,0,0.5);*/
 	width:100%;
 	height:100%;
 	position:fixed;
@@ -667,12 +678,11 @@ canvas {
 .MS_popUp {
 	width:1%;
 	height:1%;
-	background:#000;
 	position:absolute;
 	top:0;
 	left:50%;
 	display:block!important;
-	box-shadow:0 0 10px #000;
+	/*box-shadow:0 0 10px #000;*/
 }
 .MS_popUpInn {
 	height: 100%;
