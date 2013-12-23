@@ -45,8 +45,9 @@
 			ctx.globalCompositeOperation = "source-over";
 			ctx.strokeStyle = current_color;
 		}else if(brush_type == 'ERASER') {
-			ctx.globalCompositeOperation = "copy";
-			ctx.strokeStyle = ("rgba(255,255,255,0)");
+		    ctx.globalCompositeOperation = "destination-out";
+			//ctx.strokeStyle = ("rgba(255,255,255,0)");
+		    ctx.strokeStyle = "rgba(0,0,0,1)"
 		}
 		ctx.beginPath();
 		ctx.moveTo(prev_x, prev_y);
