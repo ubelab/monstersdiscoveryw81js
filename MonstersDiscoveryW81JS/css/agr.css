@@ -166,16 +166,16 @@ h4 {
 	top:0;
 	left:0;
     z-index:1;
-    background: url(./../images/home1.png) no-repeat center center fixed;
+    /*background: url(./../images/home1.png) no-repeat center center fixed;*/
     /*background-size: cover;*/
-     background-size: auto 100%;
+     /*background-size: auto 100%;*/
 }
 
 .bg1 {
 	z-index:2;
-    background: url(./../images/home_face.png) no-repeat center center fixed;
+    /*background: url(./../images/home_face.png) no-repeat center center fixed;*/
     /*background-size: cover;*/
-     background-size: auto 100%;
+     /*background-size: auto 100%;*/
 }
 
 
@@ -212,6 +212,9 @@ canvas {
 	width:100%;
 }
 .homeButunera .home_btn1{
+    background: url(./../images/btn_1.png) no-repeat;
+    /*background-size: cover;*/
+    background-size: 100%;
 	height:25%;
 	margin:7% 0 0 0%;
 }
@@ -222,10 +225,16 @@ canvas {
 .homeButunera .home_btn3{
 	height:21%;
 	margin:2% 0 0 9%;
+    background: url(./../images/btn_3.png) no-repeat;
+    /*background-size: cover;*/
+    background-size: 100%;
 }
 .homeButunera .home_btn4{
 	height:24%;
 	margin:3% 0 0 8%;
+    background: url(./../images/btn_4.png) no-repeat;
+    /*background-size: cover;*/
+    background-size: 100%;
 }
 .home_logoInvenktion img{
 	width:22%;
@@ -238,9 +247,9 @@ canvas {
 .home_audioBtn img,
 .canvas_audioBtn{
 	bottom: 1%;
-    left: 7%;
+    left: 8%;
     position: absolute;
-    width: 6%;
+    height: 10%;
     z-index:10;
 }
 .homeCreditsCloseBtn {
@@ -280,8 +289,10 @@ canvas {
 /* ========================================*/
 
 .sezioni_bg {
+    /*
 	background:url(./../images/sfondostellare.png) no-repeat fixed center center;
     background-size: auto 100%;
+        */
 }
 
 .sectionImage {
@@ -305,8 +316,10 @@ canvas {
 }
 
 .livelli_bg {
+    /*
 	background:url(./../images/fondo.png) no-repeat fixed center center;
     background-size: auto 100%;
+        */
 }
 .monsterTitle {
 	font-size: 1.3em;
@@ -383,19 +396,21 @@ canvas {
 	position:absolute;
 	right:0;
 	bottom:13%;
-	width:10%;
+	width:auto;
+    height:15%;
 	z-index:100;
 	padding:10px;
 }
 .brushSizerContainer .sizer_add,
 .brushSizerContainer .sizer_less {
-	width:4%;
+	width:auto;
+    height: 6%;
 	z-index:1005;
 	bottom: 22%;
 }
 .brushSizerContainer .sizer_less {
 	bottom:12%;
-	right:7%
+	right:5%
 }
 .brushSize{
 	bottom: 13.5%;
@@ -413,118 +428,121 @@ canvas {
 .canvas_audioBtn {
 	margin:0;
 	width: 11%;
+    height:auto;
 }
 .canvas_rubber img{
 	position:absolute;
 	right:0;
 	bottom:0;
-	width:10%;
+	width:auto;
+    height:15%;
 	z-index: 1000;
 }
 .canvas_timer,
 .canvas_check {
 	position:fixed;
-	right:5px;
-	top:5px;
-	font-size:2em;
+	right:2%;
+	top:2%;
+	font-size:300%;
 	color:#fff;
 	z-index:1000;
 	padding: 0 10px;
 }
 .canvas_check {
-	width:10%;
+	width:auto;
+    height:15%;
 	right:0px;
 }
 /*DEFAULT*/
 .colorsContainer img{
 	position:absolute;
-	height: 11%;
+	height: 10%;
 	z-index: 1002;
 	border-radius:20px;
 }
 .colorsContainer img.colours1{
-	left: 4%;
+	left: 0%;
     top: 19%;
 	background:red;
 	
 }
 .colorsContainer img.colours2{
-	left: 4%;
+	left: 0%;
     top: 29%;
 	background:green;
 }
 .colorsContainer img.colours3{	
-	left: 4%;
+	left: 0%;
     top: 42%;
 	background:orange;
 }
 .colorsContainer img.colours4{
-	left: 3%;
+	left: 0%;
     top: 52%;
 	background:pink;
 }
 .colorsContainer img.colours5{
-	left: 1%;
+	left: 0%;
     top: 62%;
     background:yellow;
 }
 /* 4 COLORI */
 .maxColor4 img{
-	height: 12%;
+	height: 10%;
 }
 .maxColor4 img.colours1{
-	left: 3%;
+	left: 0%;
     top: 19%;
 }
 .maxColor4 img.colours2{
-	left: 4%;
+	left: 0%;
     top: 31%;
 }
 .maxColor4 img.colours3{	
-	left: 3.5%;
+	left: 0%;
     top: 46%;
 }
 .maxColor4 img.colours4{
-	left: 1%;
+	left: 0%;
     top: 57.5%;
 }
 
 /* 3 COLORI */
 .maxColor3 img{
-	height: 13%;
+	height: 10%;
 }
 .maxColor3 img.colours1{
-	left: 3%;
+	left: 0%;
     top: 20%;
 }
 .maxColor3 img.colours2{
-	left: 3%;
+	left: 0%;
     top: 35%;
 }
 .maxColor3 img.colours3{	
-	left: 1.5%;
+	left: 0%;
     top: 53%;
 }
 
 /* 2 COLORI */
 .maxColor2 img{
-	height: 13%;
+	height: 10%;
 }
 .maxColor2 img.colours1{
-	left: 3%;
+	left: 0%;
     top: 26%;
 }
 .maxColor2 img.colours2{
-	left: 2%;
+	left: 0%;
     top: 43%;
 }
 
 /* 1 COLORI */
 .maxColor1 img{
-	height: 14%;
+	height: 10%;
 }
 .maxColor1 img.colours1{
-	left: 2%;
+	left: 0%;
     top: 30%;
 }
 
@@ -571,18 +589,21 @@ canvas {
 }
 
 .palette {
-	height:85%;
+	height:75%;
 	position:absolute;
 	z-index:100;
 	top:10%;
-	left:-12%;
+	
 }
 
+/*
 @media (max-aspect-ratio: 5/3) {
     .palette {
 	    left:-16%;
     }
 }
+*/
+
 .gamePausedContainer li a {
 	display: inline-block;
     font-size: 0.7em;
@@ -595,7 +616,8 @@ canvas {
 	position: absolute;
     right: 13px;
     top: 28%;
-    width: 8%;
+    height: 15%;
+    width: auto;
     z-index: 100005;
 }
 .canvasImgHelp {
@@ -658,16 +680,18 @@ canvas {
 	position:absolute;
 	bottom:10px;
 	left:10px;
-	width:20%;
+	width:auto;
+    height:30%;
 	z-index:200000;
 }
 .backBTN {
 	left:auto;
 	right:1%;
-	width:7%;
+	width:auto;
+    height:10%;
 }
 .MS_popUpContainer {
-	/*background-color:rgba(0,0,0,0.5);*/
+	background-color:rgba(0,0,0,0.5);
 	width:100%;
 	height:100%;
 	position:fixed;
@@ -684,7 +708,8 @@ canvas {
 	top:0;
 	left:50%;
 	display:block!important;
-	/*box-shadow:0 0 10px #000;*/
+	box-shadow:0 0 10px #000;
+    background-color: rgba(0,0,0,1);
 }
 .MS_popUpInn {
 	height: 100%;

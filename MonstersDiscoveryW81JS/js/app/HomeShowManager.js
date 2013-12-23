@@ -30,8 +30,9 @@
 	
 	$(".JS_quit").live("tap", function (event) {
 		if(event.handled !== true) {
-			event.handled = true;
-		    INVENKTION.PageShowManager.popUpStart($('#MS_quit').html());
+		    event.handled = true;
+		    INVENKTION.PageShowManager.popUpStart($('#MS_credits').html());
+		    //INVENKTION.PageShowManager.popUpStart($('#MS_quit').html());
 		}
 	});
 	$(".home_logoInvenktion, .credits_Invenktion").live("tap", function (event) {

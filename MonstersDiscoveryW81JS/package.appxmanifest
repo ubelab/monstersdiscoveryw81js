@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="8d023062-b7af-4439-8b25-a5e4a1771660" Version="1.0.0.38" Publisher="CN=utente" />
+  <Identity Name="8d023062-b7af-4439-8b25-a5e4a1771660" Version="1.0.0.42" Publisher="CN=utente" />
   <Properties>
     <DisplayName>MonstersDiscoveryW81JS</DisplayName>
     <PublisherDisplayName>utente</PublisherDisplayName>

@@ -269,7 +269,9 @@
 			listCanvas.height = CH;
 			$(listCanvas).css("width", CW + "px");
 			$(listCanvas).css("height", CH + "px");
+			ctx = canvas.getContext("2d");
 
+             /*
 			if (scaleFactor > 1) {
 			    canvas.width = CW * scaleFactor;
 			    canvas.height = CH * scaleFactor;
@@ -283,6 +285,7 @@
 			    // update the context for the new canvas scale
 			    ctx = canvas.getContext("2d");
 			}
+            */
 
 			
 			if (isMobile) {
