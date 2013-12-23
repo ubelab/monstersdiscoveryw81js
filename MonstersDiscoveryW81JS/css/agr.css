@@ -280,7 +280,8 @@ canvas {
 /* ========================================*/
 
 .sezioni_bg {
-	/*background:url(./../images/sfondostellare.png) no-repeat fixed center center / cover;*/
+	background:url(./../images/sfondostellare.png) no-repeat fixed center center;
+    background-size: auto 100%;
 }
 
 .sectionImage {
@@ -304,7 +305,8 @@ canvas {
 }
 
 .livelli_bg {
-	/*background:url(./../images/fondo.png) no-repeat fixed center center / cover;*/
+	background:url(./../images/fondo.png) no-repeat fixed center center;
+    background-size: auto 100%;
 }
 .monsterTitle {
 	font-size: 1.3em;
