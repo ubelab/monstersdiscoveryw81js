@@ -63,8 +63,8 @@
 				if(unlocked) {
 					statusImage = lev.immagine;
 				}else {
-					statusImage = lev.immagine;
-					correctClass = "lockedLevel";
+				    statusImage = "images/question.png";
+				    correctClass = "lockedLevel";
 				}
 				if (el) {
 				    el.src = statusImage;
@@ -104,8 +104,8 @@
 						if(unlocked) {
 							statusImage = lev.immagine;
 						}else {
-							statusImage = lev.immagine;
-							correctClass = "lockedLevel";
+						    statusImage = "images/question.png";
+						    correctClass = "lockedLevel";
 						}
 						if (el) {
 						    el.src = statusImage;

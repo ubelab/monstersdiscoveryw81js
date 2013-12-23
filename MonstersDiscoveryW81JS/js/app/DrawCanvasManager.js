@@ -353,7 +353,7 @@
 			 brush_type = type;
 		 },
 		 initBrushSize: function() {
-		     brush_size = 10;
+		     brush_size = 50;
 		     console.log("images/gommasize" + brush_size / 10 + ".png");
 			 $('.sizerBg').attr("src", "images/gommasize" + brush_size / 10 + ".png");
 		 },

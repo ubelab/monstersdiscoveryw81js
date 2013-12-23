@@ -300,6 +300,7 @@
     <Content Include="images\plus_dialog.png" />
     <Content Include="images\powershot.png" />
     <Content Include="images\quarto_stato_tr.png" />
+    <Content Include="images\question.png" />
     <Content Include="images\record.png" />
     <Content Include="images\rubber.png" />
     <Content Include="images\scissor.png" />

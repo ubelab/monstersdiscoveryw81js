@@ -223,7 +223,7 @@ canvas {
 	margin:5% 0 0 3%;
 }
 .homeButunera .home_btn3{
-	height:21%;
+	height:26%;
 	margin:2% 0 0 9%;
     background: url(./../images/btn_3.png) no-repeat;
     /*background-size: cover;*/
@@ -274,7 +274,7 @@ canvas {
 	background-repeat: no-repeat;
 }
 .tutorialSkip {
-	font-size:0.5em;
+	font-size: 200% !important;
 	text-align:center;
 	margin: 0!important;
 	padding: 3px!important;
@@ -295,6 +295,10 @@ canvas {
         */
 }
 
+.lockedSection {
+    margin: auto;
+}
+
 .sectionImage {
     margin: auto;
 }
@@ -303,17 +307,18 @@ canvas {
 /* ================ LIVELLI ===============*/
 /* ========================================*/
 
+.lockedLevel {
+    margin: auto;
+}
+
 .levelImage {
     margin: auto;
 }
 
+/*
 .lockedLevel {
-	-webkit-filter: grayscale(100%);  /* safari/chrome */
-    -moz-filter: grayscale(100%); /* firefox */
-    -ms-filter: grayscale(100%);  /* IE >= 9 */
-    -o-filter: grayscale(100%); /* Opera, if support CSS3 */
-    filter: gray; filter: grayscale(100%); /* edge browsers */ 
-}
+	
+}*/
 
 .livelli_bg {
     /*
@@ -606,10 +611,12 @@ canvas {
 
 .gamePausedContainer li a {
 	display: inline-block;
-    font-size: 0.7em;
+    /*font-size: 0.7em;
     line-height: 23px;
+       
     padding: 7px;
     width: 100px;
+         */
 }
 
 .showPaintBtn {
@@ -625,7 +632,9 @@ canvas {
 }
 
 .resultsStars img{
-	width:75%!important
+    margin-top: 5%;
+    margin-bottom: 5%;
+	width:45%!important
 }
 .resultsStars {
 	text-align:center;
@@ -660,7 +669,8 @@ canvas {
 	text-align:center;
 }
 .resultContainer h4 {
-	font-size:0.6em;
+	font-size:300%;
+    margin-bottom:10%;
 }
 .imgBonusUnlocked,
 .imgSectionUnlocked {
@@ -727,14 +737,16 @@ canvas {
 .MS_popUp ul,
 .MS_popUp li,
 .MS_popUp h2{
-	font-size:1.4em;
+	font-size:300%;
 	color:#fff;
 	text-align:center;
+    
 }
 .MS_popUp h1,
 .MS_popUp h2 {
 	padding-top:10px;
 	margin:0;
+    margin-bottom:10%;
 }
 .MS_popUp h4 {
 	margin:10px;
@@ -751,7 +763,7 @@ canvas {
 	padding:15px;
 	border:2px solid #6BC5EB;
 	border-radius: 10px 10px 10px 10px;
-    display: inline;
+    display: inline-block;
     line-height: 75px;
     color:#fff;
     text-decoration:none;
