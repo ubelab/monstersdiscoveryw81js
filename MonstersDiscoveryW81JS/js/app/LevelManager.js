@@ -1,4 +1,4 @@
-/*
+﻿/*
  * INVENKTION.LevelManager
  * author: Marco Uberti 
  * date:   April, 2013

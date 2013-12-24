@@ -1,4 +1,4 @@
-/*
+﻿/*
  * INVENKTION.TimerManager
  * author: Marco Uberti 
  * date:   April, 2013

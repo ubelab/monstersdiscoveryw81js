@@ -1,4 +1,4 @@
-/*
+﻿/*
  * INVENKTION.StorageManager
  * author: Marco Uberti 
  * date:   April, 2013

@@ -1,4 +1,4 @@
-/*
+﻿/*
  * INVENKTION.DrawCanvasManagr
  * author: Marco Uberti 
  * date:   April, 2013

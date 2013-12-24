@@ -1,4 +1,4 @@
-/*
+﻿/*
  * INVENKTION.LivelliShowManager
  * author: Marco Uberti 
  * date:   May 18, 2013

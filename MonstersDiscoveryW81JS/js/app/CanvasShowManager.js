@@ -1,4 +1,4 @@
-/*
+﻿/*
  * INVENKTION.CanvasShowManager
  * author: Marco Uberti 
  * date:   May 18, 2013
