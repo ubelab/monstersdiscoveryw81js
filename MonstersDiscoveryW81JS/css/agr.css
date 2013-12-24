@@ -668,13 +668,17 @@ canvas {
 .resultContainer {
 	text-align:center;
 }
+.resultContainer h3 {
+    font-size: 150%;
+    margin-bottom: 5%;
+}
 .resultContainer h4 {
 	font-size:300%;
     margin-bottom:10%;
 }
 .imgBonusUnlocked,
 .imgSectionUnlocked {
-	width:50%;	
+	width:30%;	
 }
 .tutorialSlider li {
 	width:100%;

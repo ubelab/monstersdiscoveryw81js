@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="8d023062-b7af-4439-8b25-a5e4a1771660" Version="1.0.0.45" Publisher="CN=utente" />
+  <Identity Name="22019MarcoUberti.MonstersDiscovery" Version="1.1.0.2" Publisher="CN=B2D8D999-A9D9-48BD-8269-C8DCB90D2901" />
   <Properties>
-    <DisplayName>MonstersDiscoveryW81JS</DisplayName>
-    <PublisherDisplayName>utente</PublisherDisplayName>
+    <DisplayName>Monsters Discovery</DisplayName>
+    <PublisherDisplayName>Marco Uberti</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
   <Prerequisites>
@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <m2:VisualElements DisplayName="MonstersDiscoveryW81JS" Description="MonstersDiscoveryW81JS" ForegroundText="light" BackgroundColor="#5086e1" Square150x150Logo="images\icon.png" Square30x30Logo="images\SmallLogo.png">
+      <m2:VisualElements DisplayName="Monsters Discovery" Description="MonstersDiscoveryW81JS" ForegroundText="light" BackgroundColor="#5086e1" Square150x150Logo="images\icon.png" Square30x30Logo="images\SmallLogo.png">
         <m2:DefaultTile ShortName="Monsters Discovery">
         </m2:DefaultTile>
         <m2:SplashScreen Image="images\splashscreen.png" BackgroundColor="#5086e1" />

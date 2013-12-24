@@ -1,4 +1,4 @@
-//Initialize function
+﻿//Initialize function
 var init = function () {
     $('.ui-btn-back').live('tap', function(event) {
     	console.log("OK cliccato EXIT YES");

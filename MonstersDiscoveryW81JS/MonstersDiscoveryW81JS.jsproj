@@ -49,9 +49,10 @@
     <RequiredPlatformVersion>8.1</RequiredPlatformVersion>
     <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
-    <PackageCertificateKeyFile>MonstersDiscoveryW81JS_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>MonstersDiscoveryW81JS_StoreKey.pfx</PackageCertificateKeyFile>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
     <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
+    <PackageCertificateThumbprint>20EDF17F38C727AE4160CB04326FC3CDDE737143</PackageCertificateThumbprint>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
@@ -407,6 +408,8 @@
     <Content Include="js\libs\swipeview.js" />
     <Content Include="js\main.js" />
     <Content Include="js\script.js" />
+    <None Include="Package.StoreAssociation.xml" />
+    <None Include="MonstersDiscoveryW81JS_StoreKey.pfx" />
     <Content Include="WebContent\README.txt" />
     <None Include="MonstersDiscoveryW81JS_TemporaryKey.pfx" />
   </ItemGroup>
