@@ -56,6 +56,22 @@
     width:350px;
 }
 
+/*BOTTONI AVANTI E INDIETRO SEZIONI SWIPE*/
+.prevSection,.prevAtelier,.prevSwipeLevel {
+    position:absolute;
+    top:45%;
+    right:20px;
+    z-index:200000;
+    font-size: 200%;
+}
+
+.nextSection,.nextAtelier,.nextSwipeLevel {
+    position:absolute;
+    top:45%;
+    left:20px;
+    z-index:200000;
+    font-size: 200%;
+}
 
 /*Marco Uberti - schermi alti e stretti (4/3 o quadrati), massimo schiacciamento*/
 @media (max-aspect-ratio: 3/3) {
@@ -113,7 +129,7 @@ body,html {
 	}
 }
 
-body,
+*,body,
 body a,
 .ui-body-s {
 	font-family:'KOMIKAX', Arial, sans-serif;

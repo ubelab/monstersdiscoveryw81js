@@ -7,7 +7,8 @@
  * 
  */
 (function($, exports){
-	
+    var gallery;
+
 	//BACK BUTTON
 	$(".jsBackSezioni").live('tap',function(event){
 		if(event.handled !== true) {
@@ -16,11 +17,29 @@
 		}
 	});
 
+	$(".nextSwipeLevel:visible").live('tap', function (event) {
+	    if (event.handled !== true) {
+	        event.handled = true;
+	        if (gallery)
+	            gallery.prev();
+	    }
+	});
+
+	$(".prevSwipeLevel:visible").live('tap', function (event) {
+	    if (event.handled !== true) {
+	        event.handled = true;
+	        if (gallery)
+	            gallery.next();
+	    }
+	});
+
 	//Con questo metodo riesco a intercettare quando una pagina sta per essere mostrata
 	//e di conseguenza fare gli aggiornamenti alla UI del caso
 	$(document).bind('pagebeforeshow', function(event){
 		currentPage = $(event.target).attr("id");
 		
+		
+
 		//### LIVELLI
 		if(currentPage == 'livelli') {
 			$("#wrapper,#wrapper_livelli,#wrapper_atelier").html("");//svuoto
@@ -30,8 +49,8 @@
 			var sectionindex = INVENKTION.LevelManager.getLastSectionUsed();
 			var section = INVENKTION.LevelManager.getSection(parseInt(sectionindex));
 			
-			var	gallery,
-				el,
+			//var	gallery,
+				var el,
 				i,
 				page,
 				slides = section.livelli;

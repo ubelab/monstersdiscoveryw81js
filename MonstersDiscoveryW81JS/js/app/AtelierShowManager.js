@@ -7,7 +7,8 @@
  * 
  */
 (function($, exports){
-	
+    var gallery;
+
 	//BACK BUTTON
 	$(".jsAtelierBackHome").live('tap',function(event){
 		if(event.handled !== true) {
@@ -16,11 +17,27 @@
 		}
 	});
 
+	$(".nextAtelier:visible").live('tap', function (event) {
+	    if (event.handled !== true) {
+	        event.handled = true;
+            if(gallery)
+	        gallery.prev();
+	    }
+	});
+
+	$(".prevAtelier:visible").live('tap', function (event) {
+	    if (event.handled !== true) {
+	        event.handled = true;
+	        if (gallery)
+	        gallery.next();
+	    }
+	});
+
 	//Con questo metodo riesco a intercettare quando una pagina sta per essere mostrata
 	//e di conseguenza fare gli aggiornamenti alla UI del caso
 	$(document).bind('pagebeforeshow', function(event){
 		currentPage = $(event.target).attr("id");
-		
+
 		//### LIVELLI
 		if(currentPage == 'atelier') {
 			
@@ -42,8 +59,8 @@
 				}
 			}
 			
-			var	gallery,
-				el,
+			//var	gallery,
+				var el,
 				i,
 				page,
 				slides = tuttiLivelli;

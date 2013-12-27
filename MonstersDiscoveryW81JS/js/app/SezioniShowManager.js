@@ -7,7 +7,7 @@
  * 
  */
 (function($, exports){
-	
+    var gallery;
 	//BACK BUTTON
 	$(".jsBackHome").live('tap',function(event){
 		if(event.handled !== true) {
@@ -24,18 +24,37 @@
 		}
     });
 
+	
+
 	//Con questo metodo riesco a intercettare quando una pagina sta per essere mostrata
 	//e di conseguenza fare gli aggiornamenti alla UI del caso
 	$(document).bind('pagebeforeshow', function(event){
 		currentPage = $(event.target).attr("id");
 		
+		$(".nextSection").unbind('tap');
+		$(".prevSection").unbind('tap');
+
+		$(".nextSection").bind('tap', function (event) {
+		    if (event.handled !== true) {
+		        event.handled = true;
+		        gallery.prev();
+		    }
+		});
+
+		$(".prevSection").bind('tap', function (event) {
+		    if (event.handled !== true) {
+		        event.handled = true;
+		        gallery.next();
+		    }
+		});
+
 		//### SEZIONI
 		if(currentPage == 'sezioni') {
 				$("#wrapper, #wrapper_livelli,#wrapper_atelier").html("");//svuoto
 				$("#wrapper").css("width",window.innerWidth);
 				$("#wrapper").css("height",window.innerHeight);
-				var	gallery,
-					el,
+				//var	gallery,
+					var el,
 					i,
 					page,
 					slides = INVENKTION.LevelManager.getSezioni();
