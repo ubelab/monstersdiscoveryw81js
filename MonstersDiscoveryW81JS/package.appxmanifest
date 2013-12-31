@@ -16,7 +16,7 @@
   <Applications>
     <Application Id="App" StartPage="default.html">
       <m2:VisualElements DisplayName="Monsters Discovery" Description="MonstersDiscoveryW81JS" ForegroundText="light" BackgroundColor="#5086e1" Square150x150Logo="images\icon.png" Square30x30Logo="images\SmallLogo.png">
-        <m2:DefaultTile ShortName="Monsters Discovery">
+        <m2:DefaultTile ShortName="Monsters Discovery" Square70x70Logo="assets\icon-126.png" Square310x310Logo="assets\icon-558.png" Wide310x150Logo="images\Wide310x150Logo.png">
         </m2:DefaultTile>
         <m2:SplashScreen Image="images\splashscreen.png" BackgroundColor="#5086e1" />
         <m2:InitialRotationPreference>
