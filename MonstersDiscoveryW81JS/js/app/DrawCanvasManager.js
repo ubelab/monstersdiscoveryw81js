@@ -305,7 +305,8 @@
 			    document.getElementById("drawListener").addEventListener("pointerdown", onTouchStart, false);
 			    document.getElementById("drawListener").addEventListener("pointermove", onTouchMove, false);
 			    document.getElementById("drawListener").addEventListener("pointerup", onTouchEnd, false);
-                
+			    document.getElementById("drawListener").addEventListener("pointerleave", onTouchEnd, false);
+			    document.getElementById("drawListener").addEventListener("pointerout", onTouchEnd, false);
                 
 			}else{
 				document.addEventListener("mousedown", onMouseStart, false);
