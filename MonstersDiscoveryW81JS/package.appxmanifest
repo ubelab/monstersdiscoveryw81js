@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="22019MarcoUberti.MonstersDiscovery" Version="1.1.0.7" Publisher="CN=B2D8D999-A9D9-48BD-8269-C8DCB90D2901" />
+  <Identity Name="22019MarcoUberti.MonstersDiscovery" Version="1.1.0.8" Publisher="CN=B2D8D999-A9D9-48BD-8269-C8DCB90D2901" />
   <Properties>
     <DisplayName>Monsters Discovery</DisplayName>
     <PublisherDisplayName>Marco Uberti</PublisherDisplayName>
@@ -26,7 +26,4 @@
       </m2:VisualElements>
     </Application>
   </Applications>
-  <Capabilities>
-    <Capability Name="internetClient" />
-  </Capabilities>
 </Package>
